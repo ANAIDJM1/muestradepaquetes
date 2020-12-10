@@ -101,6 +101,8 @@ Pick up of the passengers to start our full Day performing the City Tour Ica + B
    To end our full day if the weather conditions are favorable we will enjoy
      watching the sunset in the desert (sunset). Transfer to the hotel or bus station, approximately 18h30 After having enjoyed a day
       full of fun and excitement. It is recommended to buy bus tickets at 19h00.
+    
+    THIS TOUR INFORMATION YOU COULD FIND IN "valenciatravelcusco.com"
 </p> 
 </div>
 
