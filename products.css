@@ -1,0 +1,331 @@
+body
+{
+    max-width: 1440px;
+    background-color:rgba(41, 41, 43, 0.938);
+    margin: auto;
+    background-image:url(images/fondo.png);  
+
+}
+.tilulo p
+{margin:0px;}
+
+#products
+{color:#F0F8FF;
+  background-color: #2A2C2F;
+  padding:20px 40px 40px 40px; 
+  display:block;
+
+}
+
+.parte1
+{
+  display:flex;
+  width:100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ 
+}
+.parte2
+{
+  margin-top:40px;
+}
+.parte2, .d1 , .d2
+{
+  display:flex;
+  width:100%;
+}
+.d1 p, .d2 p
+{
+margin:0;
+}
+.container0
+{
+  max-width:700px;
+}
+.container0, .d1 div, .d2 div
+{
+  margin-right:15px;
+  text-align:center;
+}
+
+.d1 div, .d2 div
+{
+  cursor: pointer;
+}
+
+.d2
+{
+  padding-bottom:13px;
+  border-bottom: 1px solid #476565;
+}
+
+.tilulo
+{
+padding-top:15px;
+text-align:center;
+color:white;
+background-color:#2A2C2F;
+}
+.tilulo h1
+{margin:0px 0px 13px 0px;
+ font-weight:400;}
+/*===========================================botones===================*/
+#allperu,#north,#center, #south, #all, #adventure ,#family ,#cousine , #cultural , #mistic,#natural
+{
+background-size:contain;
+    display: inline-block;
+    width: 42px;
+    height: 42px;
+}
+
+input[type=radio]{
+ display: none;
+}
+#allperu
+{ background-image:url(icons/allperu.png);}
+#north
+{ background-image:url(icons/north.png);}
+#center
+{ background-image:url(icons/center.png);}
+#south
+{ background-image:url(icons/south.png);}
+#all
+{ background-image:url(icons/all.png);}
+#adventure
+{ background-image:url(icons/ad.png);}
+#family
+{ background-image:url(icons/fa.png);}
+#cousine
+{ background-image:url(icons/co.png);}
+#cultural
+{ background-image:url(icons/cu.png);}
+#mistic
+{ background-image:url(icons/mi.png);}
+#natural
+{ background-image:url(icons/nat.png);}
+
+
+.d1 input[type=radio]:checked + #allperu{
+  background-image:url(icons/allperuh.png);
+}
+.d1 input[type=radio]:checked + #north{
+    background-image:url(icons/northh.png);
+}
+.d1 input[type=radio]:checked + #center{
+     background-image:url(icons/centerh.png);
+}
+.d1 input[type=radio]:checked + #south{
+     background-image:url(icons/southh.png);
+}
+
+
+.d2 input[type=radio]:checked + #all{
+background-image:url(icons/allh.png);
+}
+.d2 input[type=radio]:checked + #adventure{
+background-image:url(icons/adh.png);
+}
+.d2 input[type=radio]:checked + #family{
+  background-image:url(icons/fah.png);
+}
+.d2 input[type=radio]:checked + #cousine{
+ background-image:url(icons/coh.png);
+}
+.d2 input[type=radio]:checked + #cultural{
+ background-image:url(icons/cuh.png);
+}
+.d2 input[type=radio]:checked + #mistic{
+ background-image:url(icons/mih.png);
+}
+.d2 input[type=radio]:checked + #natural{
+ background-image:url(icons/nath.png);
+}
+
+.d1 div:hover, .d2 div:hover {  color:#007eb1;}
+
+/*======================================CIUDADES=====================================*/
+#ciudades
+{
+display:flex;
+flex-wrap:wrap;
+margin:5px;
+
+}
+#ciudades label
+{
+ border: 2px solid #75b9d469;
+ margin-right: 10px;
+ border-radius:5px;
+ display: none;/* Hidden by default */
+}
+
+#ciudades input[type=radio]:checked + .claseboton
+{
+  background-color:#75b9d469;
+  margin-right:5px;
+}
+#ciudades label:hover
+{ background-color:#75b9d469;
+}
+
+
+/*===========================================PARTE 2=========================================================*/
+.container
+{
+  display:flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  justify-content:space-evenly;
+}
+
+/*==============================================Filtro=====================*/
+/*Modelo de tarjetita*/
+.card {
+  width: 250px;
+  height: 330px;
+  /*border-radius: 15px;*/
+  padding: 1.5rem;
+  background: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+  margin-right:12px;
+  margin-bottom:50px;
+  margin-top:20px;
+  display: none;/* Hidden by default */
+}
+.card:hover {
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+.card:hover:before {
+  opacity: 1;
+}
+.card:hover .info {
+  opacity: 1;
+  -webkit-transform: translateY(0px);
+          transform: translateY(0px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+ /* border-radius: 15px;*/
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 2;
+  transition: 0.5s;
+  opacity: 0;
+}
+.card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  /*border-radius: 13px;*/
+}
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: white;
+  opacity: 0;
+  -webkit-transform: translateY(30px);
+          transform: translateY(30px);
+  transition: 0.5s;
+}
+.card .info h1 {
+  margin: 0px;  
+}
+.card .info p {  
+  font-size: 18px;
+  margin-top: 8px;
+}
+.card .info button {
+  padding: 0.6rem;
+  outline: none;
+  border: none;
+  /*border-radius: 3px;*/
+  background: white;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+.card .info button:hover {
+  background: #007eb1;
+  color: white;
+}
+
+.texto
+{
+height: 42px;
+    background-color: #343a35d4;
+    position: absolute;
+    top: -25px;
+    left: 0px;
+    width: 100%;
+    box-sizing: border-box;
+    padding-left: 13px;
+}
+
+.texto2
+{
+background-color: #070808bf;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}
+.showc {
+  display: block !important;
+}
+/*===========================================MEDIA====================================================*/
+@media (max-width: 1024px)
+{ 
+  .container0
+  { max-width:400px;}
+  .d2
+  {
+    overflow-x: scroll; 
+    overflow-y: hidden;   
+  }
+}
+@media (max-width: 768px)
+{ 
+  .container0
+  { max-width:320px;}
+
+}
+@media (max-width: 425px)
+{ 
+  #products
+  {
+    padding:20px; 
+  }
+ 
+  .container0
+  { margin: auto;
+    max-width:270px;
+  }
+
+}
+@media (max-width: 320px)
+{
+ .card {width: 220px;}
+}

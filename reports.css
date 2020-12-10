@@ -1,0 +1,430 @@
+*{box-sizing: border-box;}
+
+body
+{
+    max-width: 1440px;
+    background-color:#333;
+    margin: auto;
+    background-image:url(images/fondo.png);
+}
+p
+{
+  margin:0px;
+}
+#reportes
+{
+  color:#F0F8FF;
+  background-color: #2A2C2F;
+  padding:50px;
+}
+
+.tilulo
+{
+padding-top:15px;
+text-align:center;
+color:white;
+background-color:#2A2C2F;
+}
+.tilulo h1
+{margin:0px 0px 13px 0px;
+ font-weight:400;}
+
+.inpute
+ {
+    background-image: url('icons/searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    width: 300px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+    color:black;
+ }
+
+ .seguilink
+ {
+   cursor: pointer;
+   text-align: center;
+ }
+
+#reportes p, form
+{
+  font-size: 18px;
+}
+.btn-info
+{
+  font: inherit;
+  border:none;
+  box-sizing:border-box;
+  background-color: #007EB1;
+  height: 48px;
+  float: right;
+  width: 150px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-decoration:none;
+  color:white;
+  border-radius:5px;
+  text-align:center;
+  cursor:pointer;
+}
+.btn-info:hover
+{
+  background-color: #555;
+}
+
+/*==============================RELOAD==========================*/
+.reload
+{
+  content:"";
+float: right;
+text-decoration:none;
+background-image: url("icons/reload.png");
+border:none;
+height: 50px;
+width: 50px;
+cursor: pointer;
+background-color: inherit;
+margin-right: 13px;
+}
+.reload:hover
+{
+  background-image: url("icons/reload2.png");
+}
+/*------------radiobutons----------------*/
+
+input[type=radio] {
+	display: none;
+}
+
+#mainForm label {
+	cursor: pointer;
+	margin: 7px 7px;
+	color:white;
+}
+
+#mainForm label:before {
+	content: '';
+	display: inline-block;
+	height: 25px;
+	width: 25px;
+	background: #476565;
+	border-radius: 50%;
+	z-index: 2;
+	transition: box-shadow .4s ease, background .3s ease;
+}
+
+#mainForm input:checked + label:before {
+	box-shadow: inset 0px 3px 0 2px #476565;
+	background: #fff;
+}
+
+/*-----------------bootstrap form---------------------*/
+
+.form-group
+{
+  margin-bottom: 15px;
+}
+.form-control{
+	display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+input
+{
+  border-radius: 3px;
+  margin-top:8px;
+  height:34px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+textarea.form-control {
+    height: auto;
+}
+
+.col-md-6
+{
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+.form-control::placeholder, .form-control:-ms-input-placeholder , .form-control::-webkit-input-placeholder {
+	color: #999;
+	opacity: 1;
+  font-style: italic;
+}
+
+.botone
+{
+  height: 67px;
+ display:flex;
+ justify-content:center;
+}
+.botone button
+{
+  border:none;
+  background-color: #007EB1;
+  color:white;
+  width: 100%;
+}
+
+.botone button:hover
+{
+  background-color:#555555;
+}
+
+/*-----------------bootstrap form2---------------------*/
+
+.form-group2
+{
+  margin-bottom: 15px;
+  display: flex;
+flex-direction: column;
+}
+.form-control2{
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 60%;
+}
+
+.form-control2::placeholder, .form-control2:-ms-input-placeholder , .form-control2::-webkit-input-placeholder {
+	color: #999;
+	opacity: 1;
+  font-style: italic;
+}
+
+.forma2
+{
+  padding: 20px;
+}
+
+.forma2 textarea
+{height: 100px;}
+
+/**=============== TABLE ======================================================*/
+table.reporte {
+    background-color: #555555;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    }
+    table.reporte td, table.reporte th {
+    border: 1px solid #768e86;
+    padding: 5px;
+    }
+    table.reporte tbody td {
+    font-size: 16px;
+    color: #FFFFFF;
+    }
+    table.reporte td:nth-child(even) {
+    background: #555555;
+    }
+    table.reporte thead {
+    background: #007EB1;
+    border-bottom: #476565 10px solid;
+    }
+
+    table.reporte thead th {
+    font-size: 17px;
+    color: #FFFFFF;
+    text-align: center;
+    border-left: 2px solid #007EB1;
+    }
+    table.reporte thead th:first-child {
+    border-left: none;
+    }
+
+    table.reporte tfoot td {
+    font-size: 13px;
+    }
+    table.reporte tfoot .links {
+    text-align: right;
+    }
+    table.reporte tfoot .links a{
+    display: inline-block;
+    background: #FFFFFF;
+    color: #007EB1;
+    padding: 2px 8px;
+    border-radius: 5px;
+    }
+    .table-cont
+    { overflow: scroll;
+      max-height: 1000px;
+      width: 100%; }
+
+/*---------------------------------tabla 2----------*/
+.table-cont2
+{
+  max-height: 500px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+  #mytracking .modal-body
+  {
+    padding: 0px;
+  }
+#mytracking  table.reporte
+  {
+    margin-bottom: 10px;
+  }
+
+/*-------------------------------------Panel accordion.-----------*/
+
+.accordion {
+  border:none;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  transition: 0.4s;
+  width: 30px;
+  height: 25px;
+  border-radius: 50%;
+  background: url(icons/plus.png) #007EB1 center no-repeat;
+  background-size: contain;
+}
+
+.activea{
+  background-color: #007EB1;
+  color:white;
+  background: url(icons/menos.png)#007EB1 center no-repeat;
+  background-size: contain;
+ }
+
+.panelac {
+  display: none;
+  overflow: hidden;
+  text-align: center;
+  font-size: 15px;
+}
+
+/*-----------------------------------ADD-REPORT---------------------------------------------*/
+
+/*----------------------------MODAL---------------------*/
+
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 900px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close, .closetracking {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover, .closetracking:hover,
+.close:focus, .closetracking:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #007EB1;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  background-color: #007EB1;
+  color: white;
+}
+
+
+/*===========================================MEDIA====================================================*/
+@media (max-width: 1024px)
+{
+#reportes {padding: 20px;}
+.modal-content {max-width:80%;}
+}
+
+@media (max-width: 992px)
+{
+ .modal-content {max-width:75%;}
+
+}
+@media(min-width: 992px)
+{
+
+  .col-md-6
+  {width: 50%;
+  float: left;}
+
+}
+
+@media (max-width: 425px)
+{
+  .modal-content {max-width:90%;}
+  .inpute
+  { width: 275px;}
+  #reportes
+  { padding:20px; }
+  .table-cont
+  {
+    width: 320px;
+    overflow-x: scroll;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}

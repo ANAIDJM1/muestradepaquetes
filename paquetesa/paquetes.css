@@ -1,0 +1,198 @@
+/*====================================================SLIDESHOW==============================*/
+
+.mySlides {display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:#2a2c2f ;
+}
+
+/* Next & previous buttons */
+.prevp, .nextp {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 50%;
+  user-select: none;
+  background-color: #46414173;
+}
+
+/* Position the "next button" to the right */
+.nextp {
+  right: 0;
+  border-radius: 50%;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prevp:hover, .nextp:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: white;
+  font-size: 25px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #254f618c;
+}
+
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+/*==================================================================================*/
+
+.textocorto
+{
+    background-color:#F7F5F5;
+    margin: 0;
+    padding: 20px;
+    font-size: 16px;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+
+}
+.hi
+{font-family: 'EB Garamond', serif;
+ color:white;
+ font-size: 20px;
+  background-color: #2a2c2f;
+ height: 65px;
+ margin: 0px;
+   box-sizing: border-box;
+   padding:20px 20px;
+}
+
+
+.tilulo
+{
+  box-sizing:border-box;
+padding:15px;
+color:white;
+background-color:#2A2C2F;
+}
+.tilulo h1
+{margin:0;
+ font-weight:400;
+ text-decoration: underline;}
+
+/**====================================================  TABLE ======================================================*/
+table.steelBlueCols {
+  background-color: #555555;
+    width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  margin-bottom: 60px;
+}
+table.steelBlueCols td, table.steelBlueCols th {
+  border-right: 1px solid #768e86;
+  padding: 5px 20px;
+}
+table.steelBlueCols tbody td {
+  font-size: 16px;
+   color: #FFFFFF;
+}
+table.steelBlueCols td:nth-child(even) {
+  background: #555555;
+}
+table.steelBlueCols thead {
+  background: #007EB1;
+  border-bottom: 10px solid #007EB1;
+}
+table.steelBlueCols thead th {
+  font-size: 17px;
+  font-weight: bold;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #007EB1;
+}
+table.steelBlueCols thead th:first-child {
+  border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 13px;
+}
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+table.steelBlueCols tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #007EB1;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+/*================================================ACORDION============================================*/
+.accordion {
+    font-family: 'EB Garamond', serif;
+    border:none;
+    background-color: #F7F5F5;
+    color: #444;
+    cursor: pointer;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    font-size: 20px;
+    transition: 0.4s;
+    /*background-image: url(boton.png);
+    background-position: right;
+    background-size: 3%;
+    background-repeat: no-repeat;*/
+  }
+
+  .active, .accordion:hover {
+    background-color: #007EB1;
+    color:white;
+  }
+
+  .panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+  }
+
+
+/*====================================================RESPONSIVE==============================*/
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}

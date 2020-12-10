@@ -1,0 +1,350 @@
+body {
+  max-width: 1440px;
+  background-color: #333;
+  margin: auto;
+  background-image: url(images/fondo.png);
+  color: white;
+}
+
+#products {
+  color: #F0F8FF;
+  background-color: #2A2C2F;
+  padding: 10px 50px 50px 50px;
+}
+
+.tilulo {
+  padding-top: 15px;
+  text-align: center;
+  color: white;
+  background-color: #2A2C2F;
+}
+
+.tilulo h1 {
+  margin: 0px 0px 13px 0px;
+  font-weight: 400;
+}
+
+.cuerpo {
+  display: block;
+  padding: 20px 60px 30px 60px;
+  background-color: #2A2C2F;
+  box-sizing: border-box;
+}
+body h4, p
+{
+  background-color: #2A2C2F;
+  margin: 0px;
+  padding: 20px 60px;
+  box-sizing: border-box;
+}
+
+/*==============================RELOAD==========================*/
+.reload
+{
+  content:"";
+float: right;
+text-decoration:none;
+background-image: url("icons/reload.png");
+border:none;
+height: 50px;
+width: 50px;
+cursor: pointer;
+background-color: inherit;
+margin-bottom: 13px;
+}
+.reload:hover
+{
+  background-image: url("icons/reload2.png");
+}
+/**=============== TABLE ======================================================*/
+table.usuario {
+  background-color: #555555;
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+
+}
+
+table.usuario td, table.usuario th {
+  border: 1px solid #768e86;
+  padding: 5px;
+}
+
+table.usuario tbody td {
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+table.usuario td:nth-child(even) {
+  background: #555555;
+}
+
+table.usuario thead {
+  background: #007EB1;
+  border-bottom: #476565 10px solid;
+}
+
+table.usuario thead th {
+  font-size: 17px;
+  color: #FFFFFF;
+  text-align: center;
+  border-left: 2px solid #007EB1;
+}
+
+table.usuario thead th:first-child {
+  border-left: none;
+}
+
+table.usuario tfoot td {
+  font-size: 13px;
+}
+
+table.usuario tfoot .links {
+  text-align: right;
+}
+
+table.usuario tfoot .links a {
+  display: inline-block;
+  background: #FFFFFF;
+  color: #007EB1;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+.table-cont {
+  max-height: 1000px;
+  width: 100%;
+  overflow-y: scroll;
+}
+
+table a {
+  text-decoration: none;
+  Color: white;
+  margin-right: 15px;
+}
+/*=============================Otros Elementos Más================================*/
+.desabilita
+{
+  pointer-events: none;
+}
+.btn-info
+{
+  font: inherit;
+  border:none;
+  box-sizing:border-box;
+  background-color: #007EB1;
+  height: 48px;
+  float: right;
+  width: 150px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  text-decoration:none;
+  color:white;
+  border-radius:5px;
+  text-align:center;
+   cursor:pointer;
+}
+.btn-info:hover
+{
+    background-color: #555;
+}
+.adiciona {
+  justify-content: center;
+  text-align: center;
+  display: flex;
+  background-color: #2A2C2F;
+  box-sizing: border-box;
+  padding:20px;
+}
+
+
+/*----------------------------MODAL---------------------*/
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  max-width: 50% ;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close,.close1,.close2 {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close,.close1,.close2:hover,
+.close,.close1,.close2:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #007EB1;
+  color: white;
+}
+
+.modal-body {
+  padding: 10px 20px;
+  color:black;
+  display: block;
+}
+.modal-body p
+{
+  color:white;
+  background-color: #864141;
+  padding: 13px;
+
+}
+.modal-footer {
+  background-color: #007EB1;
+  color: white;
+}
+
+.botone
+{
+  height: 67px;
+ display:flex;
+ justify-content:center;
+}
+.botone button
+{
+  border:none;
+  background-color: #007EB1;
+  color:white;
+  width: 100%;
+}
+
+.botone button:hover
+{
+  background-color:#555555;
+}
+/*================================FORM=============================*/
+.form-group
+{
+  margin-bottom: 15px;
+}
+.col-md-6
+{
+  position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+form div
+{
+margin-bottom: 15px;
+}
+.form-control
+{
+  display: block;
+    width: 90%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form input
+{
+  border-radius: 3px;
+  margin-top:8px;
+  height: 20px;
+}
+form label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+}
+
+.form-control::placeholder, .form-control:-ms-input-placeholder , .form-control::-webkit-input-placeholder {
+	color: #999;
+	opacity: 1;
+  font-style: italic;
+}
+/*===================================show passs=====================*/
+.passworde
+{
+  display:flex;
+  flex-align:center;
+}
+
+input[name='showpas'],input[name='showpas1']
+{
+  display: none;
+}
+.ojito
+{
+  margin-top: 18px;
+  background-image: url(icons/showpwd.png);
+  background-size: contain;
+  width: 30px;
+  height: 20px;
+  margin-left: 5px;
+}
+
+input[name='showpas']:checked + .ojito
+{
+  background-image: url(icons/showpwd2.png);
+}
+input[name='showpas1']:checked + .ojito
+{
+  background-image: url(icons/showpwd2.png);
+}
+/*================================MEDIA=============================*/
+@media screen and (max-width: 425px)
+{
+  table a {
+    margin-right: 0px;
+  }
+.cuerpo
+{
+  padding: 20px 10px 20px 10px;
+}
+table.usuario td, table.usuario th
+{
+  padding: 0px;
+}
+}
