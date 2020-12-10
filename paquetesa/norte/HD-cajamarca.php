@@ -92,7 +92,13 @@ function showSlides(n) {
 <button class="accordion">HALF DAY</button>
 <div class="panel">
 <p>
-Visit the city of Cajamarca which holds an important place in the history of the conquest by the Spaniards of South America and Peru. Although previously an important Inca city, it became a typical “colonial” city, well-known for its churches and colonial large houses conserved almost intact, it is an alive museum that waits for you.  Also you will see the “Ransom Room” which is the famous site of the encounter between Francisco Pizarro and the Inca Atahualpa where Pizarro promissed to free Atahualpa if he filled the room with gold and silver. Atahualpa had the room filled, but Pizarro broke his promise and subsequnently killed Atahualpa in the main square.
+Visit the city of Cajamarca which holds an important place in the history of the conquest by the Spaniards of South America and Peru. Although previously an 
+  important Inca city, it became a typical “colonial” city, well-known for its churches and colonial large houses conserved almost intact, it 
+  is an alive museum that waits for you.  Also you will see the “Ransom Room” which is the famous site of the encounter between Francisco Pizarro
+  and the Inca Atahualpa where Pizarro promissed to free Atahualpa if he filled the room with gold and silver. Atahualpa had the room filled, 
+  but Pizarro broke his promise and subsequnently killed Atahualpa in the main square.
+  
+  THIS TOUR INFORMATION YOU COULD FIND IN "valenciatravelcusco.com"
 </p>
 </div>
 
